@@ -1,10 +1,10 @@
 const express=require('express');
 const router=express.Router();
 router.get('/',(req,res)=>{
-    res.send('Index');
+    res.render('index');
 });
 
-router.get('/abaut',(req,res)=>{
-    res.send('Bienvenido raton');
+router.get('/about',(req,res)=>{
+    res.render('about');
 });
 module.exports=router;

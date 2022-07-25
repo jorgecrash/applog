@@ -3,8 +3,11 @@ const path=require('path');
 const exphbs=require('express-handlebars');
 const methodOverride=require('method-override');
 const session=require('express-session');
-//inicializacion
+//inicializaciones
+/* iniciar apliacion*/ 
 const app=express();
+/*iniciar bas de datos */
+require('./database');
 //settings
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname,'views'));//permite unir directorios
